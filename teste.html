@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>Pergunta Especial</title>
+        <style>
+            body {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+            }
+            .question {
+                font-size: 24px;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            .options {
+                display: flex;
+                justify-content: space-between;
+                width: 200px;
+            }
+            .option {
+                padding: 10px 20px;
+                font-size: 18px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="question">
+            Quer namorar comigo?
+        </div>
+        <div class="options">
+            <button class="option" onclick="responder('Sim')">Sim</button>
+            <button class="option" onclick="responder('Não')">Não</button>
+        </div>
+
+        <script>
+            function responder(resposta) {
+                if(resposta == 'Sim') {
+                    alert("Parabéns! Agora você tem o melhor namorado do mundo. Falta apenas 6 meses para o nosso casamento!");
+                } else if (resposta == 'Não') {
+                    alert("Não aceito não como resposta");
+                }
+            }
+        </script>
+    </body>
+</html>
